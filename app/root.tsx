@@ -13,14 +13,11 @@ import {
 import type { MetaFunction, LinksFunction  } from "@remix-run/node";
 import tailwindStyles from '~/tailwind.css'
 import baseStyles from '~/styles/base.css'
-import favicon from '~/assets/images/favicon.png'
-import { GraphProvider } from "./components/graphContext";
+import { FormProvider } from "./components/context";
 export const links: LinksFunction = () => {
   return [
     { rel: 'stylesheet', href: tailwindStyles },
-    { rel: 'stylesheet', href: baseStyles  },
-    { rel: 'icon', href: favicon ,
-  type: 'image/png'},
+    { rel: 'stylesheet', href: baseStyles  }
   ]
 }
 
@@ -61,13 +58,15 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <GraphProvider>
+      
+          <FormProvider>
         <Outlet />
         
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        </GraphProvider>
+        </FormProvider>
+     
       </body>
     </html>
   );
