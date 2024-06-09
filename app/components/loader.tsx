@@ -1,24 +1,43 @@
+import  { useEffect, useState } from 'react';
+import loadImg from '~/assets/images/load.png'
+const Loader = ({ children }) => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [progress, setProgress] = useState(0);
 
-import SplashImg from './../assets/images/Splash.png'
-import LogoImg from './../assets/images/Logo.png'
+  useEffect(() => {
+    let timer;
+    if (isLoading) {
+      timer = setInterval(() => {
+        setProgress((prevProgress) => {
+          const newProgress = prevProgress + 10;
+          if (newProgress >= 100) {
+            clearInterval(timer);
+            setIsLoading(false);
+          }
+          return newProgress;
+        });
+      }, 1000); // Change every second
+    }
 
-const Loader = () => {
-    return (<div   
+    return () => {
+      clearInterval(timer);
+    };
+  }, [isLoading]);
 
-    className='relative h-screen overflow-hidden  w-screen items-center  justify-center flex'>
-        <img 
-               src={SplashImg}
-               className='w-full h-screen  absolute z-10'
-               alt=""
-             />
-              <img
-               src={LogoImg}
+  if (isLoading) {
+    return (
+      <div className="w-full h-screen flex items-center  justify-center bg-black relative">
+        <h2 className='text-white text-8xl'>Loading... {progress}%</h2>
+    <img    src={loadImg}
+              
+              className="absolute  ease-out duration-300"
+              style={{ left: `${progress}%` }} alt=""/>
+        
+      </div>
+    );
+  }
 
+  return children;
+};
 
-                className='relative z-20 '
-                alt=""
-             />
-    </div>  );
-}
- 
 export default Loader;

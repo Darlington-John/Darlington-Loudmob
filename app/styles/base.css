@@ -1,9 +1,37 @@
 @font-face {
-    font-family: 'Jost';
-    src: url('./../assets/fonts/Jost.ttf') format('truetype');
+    font-family: 'Buenard';
+    src: url('./../assets/fonts/Buenard/Buenard-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Cool';
+    src: url('./../assets/fonts/coolvetica/coolvetica-rg.otf') format('opentype');
 }
 
-* {
-    font-family: 'Jost';
+.bue {
+    font-family: 'Buenard';
 }
 
+.cool{ 
+    font-family: 'Cool';
+}
+*::-webkit-scrollbar {
+    display: none;
+  }
+.ber {
+
+
+        -webkit-text-stroke: 4px rgb(255, 255, 255);
+
+}
+.berk {
+
+
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+
+}
+
+@media screen and (max-width: 768px) {
+    .last {
+        text-align-last: center;
+    }
+  }

@@ -13,7 +13,8 @@ import {
 import type { MetaFunction, LinksFunction  } from "@remix-run/node";
 import tailwindStyles from '~/tailwind.css'
 import baseStyles from '~/styles/base.css'
-import { FormProvider } from "./components/context";
+import LoudContext, { LoudProvider } from "./components/context";
+
 export const links: LinksFunction = () => {
   return [
     { rel: 'stylesheet', href: tailwindStyles },
@@ -59,13 +60,13 @@ export default function App() {
       </head>
       <body>
       
-          <FormProvider>
+     <LoudProvider>
         <Outlet />
-        
+        </LoudProvider>
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
-        </FormProvider>
+      
      
       </body>
     </html>
