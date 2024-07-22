@@ -21,7 +21,7 @@ const HomeHeroSection = () => {
         duration: 1,  delay: 1, }}>
     <div className='flex flex-col gap-[36px] items-end md:flex-row flex-wrap md:text-4xl md:gap-4'>
 <h1>loud</h1>
-<h1>mob</h1>
+<h1>mokb</h1>
 <div className='flex items-end flex-col'>
 <div className='p-6 h-full bg-white rounded-full  lg:hidden '></div>
 <h1>media</h1>
