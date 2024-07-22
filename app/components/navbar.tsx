@@ -4,10 +4,11 @@ import { motion } from "framer-motion"
 import BarsIcon from '~/assets/icons/Bars.svg';
 import XmarkIcon from '~/assets/icons/Xmark.svg';
 import { useState, useEffect } from 'react';
+import { useLoud } from "./context";
 
 const Navbar = () => {
   const location = useLocation();
-    const [isOverlayOpen, setIsOverlayOpen] = useState(false);
+  const{setIsOverlayOpen, isOverlayOpen}  = useLoud();
   const [icon, setIcon] = useState(BarsIcon);
   useEffect(() => {
     const navElement = document.getElementById('myNav');
@@ -17,6 +18,17 @@ const Navbar = () => {
     // Set isOverlayOpen based on initial height
     setIsOverlayOpen(initialHeight === '60%');
   }, []);
+  const toggleNav = () => {
+    const navElement = document.getElementById('myNav');
+  
+    if (navElement.style.height === '40%') {
+      navElement.style.height = '0%';
+      setIsOverlayOpen(false);
+    } else {
+      navElement.style.height = '40%';
+      setIsOverlayOpen(true);
+    }
+  };
   const handleToggleNav = () => {
     toggleNav();
     setIsOverlayOpen(!isOverlayOpen);
@@ -77,13 +89,5 @@ about us
         </div>
     </motion.nav> );
 }
-export const toggleNav = () => {
-    const navElement = document.getElementById('myNav');
-  
-    if (navElement.style.height === '60%') {
-      navElement.style.height = '0%';
-    } else {
-      navElement.style.height = '60%';
-    }
-  };
+
 export default Navbar;

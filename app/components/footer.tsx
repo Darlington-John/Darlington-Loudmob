@@ -9,24 +9,24 @@ const Footer = () => {
 <Link to="/">
     home
 </Link>
-<Link to="/about-us">
+<Link to="/loudmob/about-us">
 about us
 </Link>
-<Link to="/prrocess">
+<Link to="/loudmob/process">
 process
 </Link>
-<Link to="case studies">
+<Link to="/loudmob/case-study">
 case studies
 </Link>
-<Link to="/work">
+<Link to="/loudmob/work">
 work
 </Link>
 </div>
 <div className="flex flex-col gap-3 2xs:gap-1 ">
-<Link to="case studies">
+<Link to="/loudmob/case-study">
 labs
 </Link>
-<Link to="/work">
+<Link to="/loudmob/work">
 blogs
 </Link>
 <Link to="/">

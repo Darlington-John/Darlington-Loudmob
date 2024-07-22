@@ -1,6 +1,8 @@
 import recentProductsData from "~/components/data/recentProducts";
 import { useLoaderData } from '@remix-run/react';
 import { json, LoaderFunction } from '@remix-run/node';
+import Overlay from "~/components/overlay";
+import Navbar from "~/components/navbar";
 
 
 
@@ -27,6 +29,8 @@ export default function LoudmodIndex() {
   return (
 
     <div>
+      <Overlay/>
+      <Navbar/>
       <section>
 <video src={project.heroVid}
  autoPlay

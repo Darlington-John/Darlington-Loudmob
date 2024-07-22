@@ -1,3 +1,5 @@
+import Navbar from "~/components/navbar";
+import Overlay from "~/components/overlay";
 import BrandingSection from "~/components/sections/home/branding";
 import ClientsSection from "~/components/sections/home/clients";
 import HomeHeroSection from "~/components/sections/home/homeHero";
@@ -18,8 +20,8 @@ export default function LoudmodIndex() {
 <HomeHeroSection/>
 
 <ReelSection/>
-
-
+<Navbar/>
+<Overlay/>
 
 <RecentsSection/>
 <ServicesSection/>

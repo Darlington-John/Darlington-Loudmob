@@ -48,8 +48,9 @@ export const LoudProvider = ({ children }) => {
     setHoveredElement(null);
     setCursorImage(null); // Reset mainImage when leaving the element
   };
+  const [isOverlayOpen, setIsOverlayOpen] = useState(false);
   const value = {
-cursorStyle, containerStyle, handleMouseLeave, handleMouseEnter, hoveredElement,position, setPosition, cursorImage, setCursorImage
+cursorStyle, containerStyle, handleMouseLeave, handleMouseEnter, hoveredElement,position, setPosition, cursorImage, setCursorImage, isOverlayOpen, setIsOverlayOpen
   };
 
   return <LoudContext.Provider value={value}>{children}</LoudContext.Provider>;

@@ -21,7 +21,7 @@ const HomeHeroSection = () => {
         duration: 1,  delay: 1, }}>
     <div className='flex flex-col gap-[36px] items-end md:flex-row flex-wrap md:text-4xl md:gap-4'>
 <h1>loud</h1>
-<h1>mokb</h1>
+<h1>mob</h1>
 <div className='flex items-end flex-col'>
 <div className='p-6 h-full bg-white rounded-full  lg:hidden '></div>
 <h1>media</h1>
@@ -31,7 +31,7 @@ const HomeHeroSection = () => {
 <motion.div className='flex items-end pb-20 relative z-20 justify-end pr-20 lg:pb-12 lg:pr-12 md:absolute right-10 bottom-4 md:p-0' initial={{ opacity: 0,  }}
         animate={{opacity: 1  }}  transition={{   ease: "linear",
         duration: 1,  delay: 1, }}>
-    <Button fancy=" " link="/work" action="our-work"/>
+    <Button fancy=" " link="/loudmob/work" action="our-work"/>
 </motion.div>
     </section> );
 }

@@ -25,7 +25,7 @@ We work with you to create a brand that is both memorable and unique, by creatin
 </p>
 </div>
 <div>
-<Link  to="/case-studies" className='flex flex-wrap gap-4 items-center '  onMouseEnter={ handleMouseEnter}
+<Link  to="/loudmob/case-study" className='flex flex-wrap gap-4 items-center '  onMouseEnter={ handleMouseEnter}
         onMouseLeave={handleMouseLeave}>
 <img src={arrRightBlueIcon} alt="" className='w-8'/>
 <h1 className='text-[20px] font-bold '>view case  studies</h1>

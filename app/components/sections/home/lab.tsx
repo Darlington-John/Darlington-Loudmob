@@ -18,7 +18,7 @@ const LabSection = () => {
 <p className="text-white text-xl leading-7  md:text-base xs:text-sm ">
 At Loud Mob Labs we make targeted marketing smarter with our homegrown products. Exploiting the latest technological advancements like Facial recognition and augmented reality, we create an emotional connect with your consumers.
 </p>
-<Button action='our labs' fancy=' ' link="/about-us"/>
+<Button action='our labs' fancy=' ' link="/loudmob/about-us"/>
 
 </div>
 </div>

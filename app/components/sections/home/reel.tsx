@@ -11,7 +11,7 @@ const ReelSection = () => {
 <p className="text-white text-xl leading-7  md:text-base xs:text-sm">
 We are a design, strategy, technology and marketing agency for the loud, the nimble and the game-changers! From small businesses to shark tank winners, we love working with businesses who are new-age, adaptive and think differently. We use innovative designs, marketing, strategies and technologies to create immersive experiences and engage audiences. With storytelling at the core of everything we do, we help growing businesses grow faster! Take a look at some of our work.
 </p>
-<Button action='about us' fancy=' ' link="/about-us"/>
+<Button action='about us' fancy=' ' link="/loudmob/about-us"/>
 </div>
 <div className='cursor-none'>
 <video className="w-full " src={reelVid} autoPlay muted loop    />

@@ -28,9 +28,9 @@ export default function LoudmodIndex() {
     <div>
       {/* <Loader> */}
      <CustomCursor/>
-     <Navbar/>
+     
      <Banner/>
-     <Overlay/>
+
      <Outlet/>
      <TalkSection/>
      <Footer/>

@@ -24,7 +24,7 @@ fourthFeature={props.fourthFeature}  fifthFeature={props.fifthFeature}  apps=" "
 </div>
 <div className="flex items-end justify-end flex-col lg:order-1">
 <video src={props.video} loop muted autoPlay  className="xl:max-w-[600px]  lg:w-full"/>
-<Button fancy=" " action="view work" link="/work"/>
+<Button fancy=" " action="view work" link="/loudmob/work"/>
 </div>
 </div>
     </div>  );
