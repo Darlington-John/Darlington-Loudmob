@@ -1,5 +1,6 @@
 import createBrands from '~/assets/videos/createBrands.mp4'
 import paintMobile from '~/assets/videos/paintMobile.mp4'
+import mobilePoster from '~/assets/images/mobile-paint.png'
 import Button from '~/components/buttons'
 import { motion } from "framer-motion"
 import poster  from '~/assets/images/we-create-brands.png'
@@ -14,6 +15,7 @@ const HomeHeroSection = () => {
  className='w-full absolute top-[0px]  z-10 h-full md:top-0  object-cover md:hidden'
 />
 <video src={paintMobile}
+poster={mobilePoster}
  autoPlay
  muted 
  className='w-full absolute top-[-90px]  z-10 h-full md:top-0 object-cover  hidden md:flex left-0 2xs:object-contain'
