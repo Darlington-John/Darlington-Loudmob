@@ -1,6 +1,8 @@
 import serviceVid from '~/assets/videos/Services.mp4'
 import serviceMobileVid from '~/assets/videos/Services-Mobile.mp4'
+import serviceMobileImg from '~/assets/images/service-mobile.png'
 import arrRightBlueIcon from '~/assets/icons/arrRightBlue.svg'
+import serviceImg from '~/assets/images/balls.png'
 import { useLoud } from '~/components/context';
 import { Link } from '@remix-run/react';
 
@@ -9,11 +11,13 @@ const ServiceHeroSection = () => {
     return (  <section className="h-screen w-full flex items-center xl:items-start  text-white  pl-40  bg-black overflow-hidden  relative py-32 lg:pl-0 lg:justify-center md:flex-col md:h-auto   md:py-4 ">
 <video src={serviceVid}
  autoPlay
+ poster={serviceImg}
  muted  loop 
  className=' absolute top-[-20%]  z-10 h-full    object-bottom  z-10 left-0 w-full  scale-125  md:hidden object-cover'
 />
 <video src={serviceMobileVid}
  autoPlay
+ poster={serviceMobileImg}
  muted  loop 
  className=' h-full    object-bottom  z w-full   hidden md:flex  object-cover'
 />

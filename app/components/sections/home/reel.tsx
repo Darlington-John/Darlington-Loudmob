@@ -1,6 +1,6 @@
 import reelVid from '~/assets/videos/reel.mp4'
 import Button from '~/components/buttons';
-
+import reelImg from  '~/assets/images/reel-img.png'
 import Slide from '~/components/slide';
 
 const ReelSection = () => {
@@ -14,11 +14,11 @@ We are a design, strategy, technology and marketing agency for the loud, the nim
 <Button action='about us' fancy=' ' link="/loudmob/about-us"/>
 </div>
 <div className='cursor-none'>
-<video className="w-full " src={reelVid} autoPlay muted loop    />
+<video className="w-full " src={reelVid} autoPlay muted loop poster={reelImg}    />
 </div>
 </div>
 
-<Slide content='showreel' show=' ' position={-400}/>
+<Slide content='showreel' show  position={-400}/>
 
     </section> );
 }

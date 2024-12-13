@@ -58,23 +58,7 @@ import seventeenthRope from '~/assets/images/seventeenthRope.jpg'
 import eighteenthRope from '~/assets/images/eighteenthRope.jpg'
 import nineteenthRope from '~/assets/images/nineteenthRope.jpg'
 import twentiethRope from '~/assets/images/twentienthRope.jpg'
-import firstIce from '~/assets/images/firstIce.jpg'
-import secondIce from '~/assets/images/secondIce.jpg'
-import thirdIce from '~/assets/images/thirdIce.jpg'
-import fourthIce from '~/assets/images/fourthIce.jpg'
-import fifthIce from '~/assets/images/fifthIce.jpg'
-import sixthIce from '~/assets/images/sixthIce.jpg'
-import seventhIce from '~/assets/images/seventhIce.jpg'
-import eighthIce from '~/assets/images/eightIce.jpg'
-import ninthIce from '~/assets/images/ninthIce.jpg'
-import tenthIce from '~/assets/images/tenthIce.jpg'
-import eleventhIce from '~/assets/images/eleventhIce.jpg'
-import twelfthIce from '~/assets/images/twelfthIce.jpg'
-import thirteenthIce from '~/assets/images/thirteenthIce.jpg'
-import fourtheenthIce from '~/assets/images/fourtheenthIce.jpg'
-import fifteenthIce from '~/assets/images/fifteenthIce.jpg'
-import sixteenthIce from '~/assets/images/sixteenthIce.jpg'
-import seventeenthIce from '~/assets/images/seventeenthIce.jpg'
+
 import boltHeroVid from '~/assets/videos/boltHero.mp4'
 import watchHeroVid from '~/assets/videos/watchHero.mp4'
 import redmiHeroVid from '~/assets/videos/redmiHero.mp4'
@@ -196,31 +180,6 @@ const recentProductsData= [
         firstPack: redmiPack,
         secondPack: redmiConcept,
         thirdPack: redmiDoc
-    },
-    {id:4,
-        bgColor: '#EAE416',
-        product: "Launching India's First Premium hard Seltzer Brand",
-        url: 'launching-india-first-premium-hard-seltzer-brand',
-        first: firstIce,
-        second: secondIce ,
-        third: thirdIce,
-        fourth: fourthIce,
-        fifth: fifthIce,
-        sixth: sixthIce,
-        seventh: seventhIce,
-        eighth: eighthIce,
-        ninth: ninthIce,
-        tenth: tenthIce,
-        eleventh: eleventhIce,
-        twelfth: twelfthIce,
-        thirteenth: thirteenthIce,
-        fourteenth: fourtheenthIce,
-        fifteenth: fifteenthIce,
-        sixteenth: sixteenthIce,
-        seventeenth: seventeenthIce,
-        eighteenth: firstIce,
-        nineteenth: secondIce,
-        twentieth: thirdIce,
     },
 ]
 
